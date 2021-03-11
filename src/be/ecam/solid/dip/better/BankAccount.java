@@ -14,7 +14,7 @@ public class BankAccount {
     public void transferMoneyTo(SessionToken token,
                                 BankAccount receivingParty,
                                 int amount) {
-//Validate token
+        //Validate token
         if (authenticationService.validateToken()) {
             // transfer money
         }
