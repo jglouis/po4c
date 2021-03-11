@@ -1,14 +1,23 @@
-package be.ecam.solid.dip.bad;
+package be.ecam.solid.di.better;
+
 
 import be.ecam.solid.srp.better.SessionToken;
 
 public class BankAccount {
+
+    private final AuthenticationService authenticationService;
+
+    public BankAccount(AuthenticationService authenticationService) {
+        this.authenticationService = authenticationService;
+    }
+
     public void transferMoneyTo(SessionToken token,
                                 BankAccount receivingParty,
                                 int amount) {
         //Validate token
-        if (AuthenticationService.getInstance().validateToken()) {
+        if (authenticationService.validateToken()) {
             // transfer money
         }
     }
+
 }

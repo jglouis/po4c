@@ -1,4 +1,4 @@
-package be.ecam.solid.dip.better;
+package be.ecam.solid.di.better;
 
 public class AuthenticationServiceImpl implements AuthenticationService {
 

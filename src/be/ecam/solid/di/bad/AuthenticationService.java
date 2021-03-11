@@ -1,4 +1,4 @@
-package be.ecam.solid.dip.bad;
+package be.ecam.solid.di.bad;
 
 public class AuthenticationService {
 

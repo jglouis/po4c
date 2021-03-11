@@ -1,4 +1,4 @@
-package be.ecam.solid.dip.better;
+package be.ecam.solid.di.better;
 
 public interface AuthenticationService {
     boolean validateToken();
